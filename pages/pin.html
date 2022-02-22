@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+
+    <title>MASUKAN PIN</title>  
+
+</head>
+
+<body class="bg-blue-600">
+   <div class="flex justify-center mt-24 space-x-20 text-white font-bold text-4xl">
+        <img src="/img/pin.png" alt="">
+    
+        <div class="text-center text-4xl space-y-20 my-8 text-white">
+            <h1 class="font-bold">MASUKAN PIN</h1>
+        <form action="" onsubmit="pin()">
+            <input type="password" required class="text-black" id="angkapin">
+            <input type="submit" class="" value="ENTER">
+        </form>
+
+        <script>
+            function pin() {
+                let pin = document.getElementById("angkapin").value;
+                console.info(pin);
+                if (pin == '123456') {
+                    window.open('/pages/ambiltunai.html', '_blank')
+                    window.close();
+                } else {
+                    alert('PIN YANG ANDA MASUKAN SALAH.')
+                }
+            }
+        </script>
+        <h1 class="font-bold text-white">TEKAN 'ENTER JIKA SELESAI  <br> MASUKAN PIN</h1>
+    </div>
+ </div>
+
+</body>
+
+</html>
+
+
+
